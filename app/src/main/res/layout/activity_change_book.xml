@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_change_book"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/grey"
+    tools:context="com.example.imtisal.finalprojectv5.ChangeBook">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="14dp"
+        android:id="@+id/etChangeNumber" />
+
+    <TextView
+        android:text="Enter Your New Name "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etChangeNumber"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="33dp"
+        android:id="@+id/textView3" />
+
+    <TextView
+        android:text="Enter your Number To Update Booking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/etChangeNumber" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="14dp"
+        android:id="@+id/etChangeName"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <TextView
+        android:text="Email "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etChangeName"
+        android:layout_alignStart="@+id/etChangeName"
+        android:layout_marginTop="38dp"
+        android:id="@+id/tvChangeEmail" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="13dp"
+        android:id="@+id/etChangeEmail"
+        android:layout_below="@+id/tvChangeEmail"
+        android:layout_alignStart="@+id/tvChangeEmail" />
+
+    <Button
+        android:background="@drawable/change"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/btnUpdate"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Travellers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etChangeEmail"
+        android:layout_alignStart="@+id/etChangeEmail"
+        android:layout_marginTop="30dp"
+        android:id="@+id/tvChangeTravellers" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etChangTravellers"
+        android:layout_below="@+id/tvChangeTravellers"
+        android:layout_alignEnd="@+id/btnUpdate"
+        android:layout_marginTop="13dp" />
+
+
+</RelativeLayout>

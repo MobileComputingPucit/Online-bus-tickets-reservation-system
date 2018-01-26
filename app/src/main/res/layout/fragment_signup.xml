@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grey"
+    tools:context="com.example.imtisal.finalprojectv5.SignupFragment">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signupbut"
+        android:text="Sign Up"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:background="#000000"
+        android:alpha="0.45"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:hint="M-D-YYYY"
+        android:ems="10"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/enterDob"
+        android:layout_above="@+id/signupbut"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/enterPh"
+        android:layout_marginLeft="50dp"
+        android:hint="Mobile Number"
+        android:layout_above="@+id/enterDob"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="21dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/enterMail"
+       android:layout_marginLeft="50dp"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:layout_above="@+id/enterPh"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="22dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/enterPass"
+        android:inputType="textPassword"
+      android:layout_marginLeft="50dp"
+        android:hint="Password"
+        android:layout_above="@+id/enterMail"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="23dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/enterName"
+        android:layout_marginLeft="50dp"
+        android:hint="User Name"
+        android:layout_above="@+id/enterPass"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="24dp" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/userw"
+        android:layout_alignTop="@+id/enterName"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView6" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/lockw"
+        android:layout_alignTop="@+id/enterPass"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView7" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/messagew"
+        android:layout_alignTop="@+id/enterMail"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView8" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/mobilephone"
+        android:layout_alignTop="@+id/enterPh"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView9" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/iconw"
+        android:layout_alignTop="@+id/enterDob"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView10" />
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="160dp"
+        app:srcCompat="@drawable/bot_logo"
+        android:id="@+id/imageView5"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
+

@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@drawable/blur_road1"
+    tools:context="com.example.imtisal.finalprojectv5.FirstFragment">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:id="@+id/frontPageLogo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bot_logo"
+        android:layout_weight="0.33"
+        android:layout_marginLeft="70dp"
+
+        />
+
+</LinearLayout>
+    <Button
+
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:alpha="0.60"
+        android:background="#4c4c4c"
+        android:text="Book Ticket"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:id="@+id/btnBookTicket"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic"
+        />
+
+    <Button
+
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="26dp"
+        android:alpha="0.55"
+        android:id="@+id/btnCancelTicket"
+        android:layout_below="@+id/btnBookTicket"
+        android:layout_centerHorizontal="true"
+        android:background="#4c4c4c"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:text="Cancel Ticket"
+        android:textStyle="italic"
+        />
+
+    <Button
+
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="33dp"
+        android:id="@+id/btnGetDetails"
+        android:alpha="0.50"
+        android:textStyle="italic"
+        android:layout_below="@+id/btnCancelTicket"
+        android:layout_alignStart="@+id/btnBookTicket"
+        android:background="#4c4c4c"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:text="Edit Ticket"/>
+
+
+</RelativeLayout>

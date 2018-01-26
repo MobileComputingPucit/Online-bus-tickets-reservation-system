@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+android:background="@drawable/gaussian_blur"
+    tools:context="com.example.imtisal.finalprojectv5.Profile">
+
+
+<RadioGroup
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/G1"
+    android:orientation="horizontal"
+    android:layout_marginLeft="50dp">
+    <RadioButton
+        android:text="One Way"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/R1" />
+
+    <RadioButton
+        android:text="Round Trip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/R1"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/R2" />
+</RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvFrom"
+        android:text="From"
+        android:layout_below="@+id/G1"
+        android:layout_marginTop="20dp" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvFrom"
+        android:layout_toEndOf="@+id/tvFrom"
+        android:layout_marginStart="22dp"
+        android:id="@+id/spinner1" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTo"
+        android:text="To"
+        android:layout_below="@+id/spinner1"
+        android:layout_marginTop="20dp"
+         />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvTo"
+        android:layout_alignStart="@+id/spinner1"
+        android:id="@+id/spinner2" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/etName"
+        android:hint="Name"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/spinner2"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/etEmail"
+        android:hint="Email"
+        android:layout_below="@+id/etName"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="50dp"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/userw"
+        android:layout_alignTop="@+id/etName"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView12" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/messagew"
+        android:layout_alignTop="@+id/etEmail"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView14" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/mobilephone"
+        android:layout_alignTop="@+id/etMobileNumber"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView15" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/seatw"
+        android:layout_alignTop="@+id/etTravellers"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView16" />
+
+    <TextView
+        android:layout_height="40dp"
+        android:layout_width="wrap_content"
+        android:id="@+id/tvDate"
+        android:textSize="30sp"
+        android:hint="Set Date"
+
+        android:layout_below="@+id/etTravellers"
+        android:layout_alignStart="@+id/btnSave"
+        android:layout_marginTop="23dp" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/calw"
+        android:id="@+id/imageView11"
+        android:layout_alignTop="@+id/tvDate"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/etTravellers"
+       android:hint="No of Seats"
+        android:layout_below="@+id/etMobileNumber"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/etMobileNumber"
+        android:hint="Mobile Number"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/etEmail"
+       />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:id="@+id/btnSave"
+        android:text="Save"
+        android:layout_below="@+id/tvDate"
+        android:layout_alignStart="@+id/spinner2"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="14dp" />
+
+
+</RelativeLayout>

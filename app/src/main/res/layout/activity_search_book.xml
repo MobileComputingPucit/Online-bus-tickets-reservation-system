@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search_book"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/grey"
+    tools:context="com.example.imtisal.finalprojectv5.SearchBook">
+
+    <TextView
+        android:text="Name:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSearchTicket"
+        android:layout_alignStart="@+id/tvSearch"
+        android:layout_marginTop="34dp"
+        android:id="@+id/tvBookedNameView"
+        android:textSize="20dp"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvBookedNameView"
+        android:layout_alignEnd="@+id/editText"
+        android:id="@+id/tvBookedName" />
+
+    <TextView
+        android:text="Email:"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBookedNameView"
+        android:layout_alignStart="@+id/tvBookedNameView"
+        android:layout_marginTop="36dp"
+        android:id="@+id/tvBookedEmailView" />
+
+    <TextView
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvBookedEmailView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="140dp"
+        android:id="@+id/tvBookedEmail" />
+
+    <TextView
+        android:text="Mobile No:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBookedEmailView"
+        android:layout_alignStart="@+id/tvBookedEmailView"
+        android:layout_marginTop="46dp"
+        android:id="@+id/tvBookedMobileNumberView"
+        android:textSize="20dp"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvBookedMobileNumberView"
+        android:layout_alignStart="@+id/tvBookedName"
+        android:id="@+id/tvBookedMobileNumber" />
+
+    <TextView
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:text="Travellers:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBookedMobileNumberView"
+        android:layout_alignStart="@+id/tvBookedMobileNumberView"
+        android:layout_marginTop="47dp"
+        android:id="@+id/tvBookedTravellersView" />
+
+    <TextView
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvBookedTravellersView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="41dp"
+        android:id="@+id/tvBookedTravellers"
+        android:layout_alignStart="@+id/tvBookedMobileNumber" />
+
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/btnSearchTicket"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="300dp"
+        android:background="@drawable/search_white" />
+
+    <TextView
+        android:text="Enter Your Number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSearch"
+        android:layout_marginRight="50dp"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginRight="50dp"
+        android:id="@+id/editText"
+        android:layout_alignTop="@+id/btnSearchTicket"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

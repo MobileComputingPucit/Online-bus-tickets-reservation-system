@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ticket_information"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/grey"
+    tools:context="com.example.imtisal.finalprojectv5.TicketInformation">
+
+
+    <TextView
+        android:text="Name"
+        android:alpha="0.33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="41dp"
+        android:id="@+id/tvNameView"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:alpha="0.33"
+
+        android:text="Email"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNameView"
+        android:layout_alignStart="@+id/tvNameView"
+        android:layout_marginTop="48dp"
+        android:id="@+id/tvEmailView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvEmailView"
+        android:layout_alignStart="@+id/tvBookName"
+        android:id="@+id/tvBookEmail"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:alpha="0.33"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="Mobile No"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEmailView"
+        android:layout_alignStart="@+id/tvEmailView"
+        android:layout_marginTop="66dp"
+        android:id="@+id/tvMobileNoView" />
+
+    <TextView
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvBookMobileNo"
+        android:layout_alignBaseline="@+id/tvMobileNoView"
+        android:layout_alignBottom="@+id/tvMobileNoView"
+        android:layout_alignParentEnd="true" />
+
+
+    <TextView
+        android:alpha="0.33"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="Travellers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMobileNoView"
+        android:layout_alignStart="@+id/tvMobileNoView"
+        android:layout_marginTop="59dp"
+        android:id="@+id/tvTravellersView" />
+
+    <TextView
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvTravellersView"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/tvBookTravellers" />
+
+    <TextView
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvBookName"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/tvBookMobileNo"
+        android:layout_marginTop="29dp" />
+
+    <Button
+        android:text="Edit Data"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="#ffffff"
+        android:id="@+id/btnEdit"
+        android:alpha="0.38"
+        android:background="?attr/colorPrimaryDark"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/tvBookTravellers" />
+
+    <TextView
+        android:alpha="0.33"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="Bus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTravellersView"
+        android:layout_marginTop="39dp"
+        android:id="@+id/tvCatView"
+        android:layout_alignStart="@+id/tvTravellersView" />
+
+
+
+
+
+
+
+    <TextView
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvCatView"
+        android:layout_alignEnd="@+id/tvBookTravellers"
+        android:id="@+id/tvCat" />
+
+
+
+    <TextView
+        android:alpha="0.33"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnEdit"
+        android:layout_marginBottom="21dp"
+        android:id="@+id/tvTimeview"
+        android:layout_alignStart="@+id/tvCatView" />
+
+    <TextView
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvTimeview"
+        android:layout_alignEnd="@+id/tvCat"
+        android:id="@+id/tvTime" />
+
+
+</RelativeLayout>
